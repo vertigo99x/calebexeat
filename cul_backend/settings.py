@@ -79,7 +79,7 @@ CORS_ORIGIN_WHITELIST = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -105,15 +105,15 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+#postgres://odukoya.adedmola:a1JYBoC9KEGx@ep-tiny-shape-97273136.us-east-2.aws.neon.tech/neondb
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "exeat",
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost',
-        'PORT': '5433',
+        'NAME': "neondb",
+        'USER': 'odukoya.adedmola',
+        'PASSWORD': 'a1JYBoC9KEGx',
+        'HOST': 'ep-tiny-shape-97273136.us-east-2.aws.neon.tech',
+        'PORT': '5432',
         'CONN_MAX_AGE': 600, 
     }
 }
@@ -164,7 +164,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+#STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
 
