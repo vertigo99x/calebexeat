@@ -28,9 +28,9 @@ SECRET_KEY = 'django-insecure-g(9p4#f6##zmt^-c#15s*$3y_hnw3!i#m%(@z+h#j89izrior&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["calebexeat.onrender.com"]
 
-MAIN_HOSTNAME = "http://127.0.0.1:8000"
+MAIN_HOSTNAME = "https://calebexeat.onrender.com"
 
 
 DAILY_FORM_LIMIT = 3
