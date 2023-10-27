@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "yankeegadgets/asgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "yankeegadgets/asgi.py"
+    }
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "yankeegadgets.settings"
+  },
+  "outputDirectory": "staticfiles_build"
+}
