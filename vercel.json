@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "yankeegadgets/asgi.py",
+      "src": "cul_backend/wsgi.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
@@ -13,11 +13,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "yankeegadgets/asgi.py"
+      "dest": "cul_backend/wsgi.py"
     }
   ],
   "env": {
-    "DJANGO_SETTINGS_MODULE": "yankeegadgets.settings"
+    "DJANGO_SETTINGS_MODULE": "cul_backend.settings"
   },
   "outputDirectory": "staticfiles_build"
 }
