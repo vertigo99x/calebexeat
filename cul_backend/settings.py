@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [".vercel.app",".now.sh"]
 
-MAIN_HOSTNAME = "https://calebexeatbackend.vercel.app"
+MAIN_HOSTNAME = "https://calebexeat.onrender.com"
 
 
 DAILY_FORM_LIMIT = 3
